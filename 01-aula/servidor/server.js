@@ -1,4 +1,4 @@
-const http = require('http');
+const { createServer } = require('http');
 const requisicao = function(_, response) {
     response.writeHead(200, { "Content-Type": "text/html" });
     response.write("<h1>Texto a ser exibido</h1>");
